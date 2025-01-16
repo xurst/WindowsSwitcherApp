@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+        <UseWindowsForms>true</UseWindowsForms>
+        <StartupObject>WindowsApplicationSwiper.Program</StartupObject>
+    </PropertyGroup>
+    <ItemGroup>
+      <Compile Update="WindowAnimator.cs">
+        <DependentUpon>WindowSwitcher.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="SharpDX" Version="4.2.0" />
+      <PackageReference Include="SharpDX.Direct2D1" Version="4.2.0" />
+      <PackageReference Include="SharpDX.Direct3D11" Version="4.2.0" />
+      <PackageReference Include="SharpDX.DXGI" Version="4.2.0" />
+    </ItemGroup>
+</Project>
